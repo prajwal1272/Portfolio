@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'poppins','sans-serif';
+        }
+        body{
+              color: rgb(9, 145, 199);
+            }
+        .header
+        {
+               position: fixed;
+               top: 0;
+               left: 0;
+               width: 100%;
+               padding: 20px 10%;
+               background-color:rgb(15, 2, 44);
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               z-index: 100;
+        }
+        .logo
+        {
+               position: relative;
+               font-size: 30px;
+               color: #26eb0c;
+               text-decoration: none;
+               font-weight: 600;
+               cursor: default;
+        }
+        .navbar a
+        { 
+               display: inline-block;
+               font-size: 20px;
+               color:cornsilk;
+               text-decoration: none;
+               font-weight: 800;
+               margin-right: 50px;
+              
+             
+        }
+        .navbar a:hover
+        {
+               color: #0ef;
+        }
+        .info h1
+        {
+            font-size: 30px;
+            position: relative;
+            color: black;
+            font-weight: bold;
+            margin-top: 100px;
+            margin-left: 73px;
+        }
+        .info p{
+            font-size: 20px;
+            font-weight:800;
+            margin-left: 73px;
+            margin-top: 120px;
+            color: rgb(0, 0, 41);
+            line-height: 25px;
+        }
+        .img1
+        {
+            background-image: url(5.jpg);
+            height: 300px;
+            width: 300px;
+            margin-top: -180px;
+            margin-left: 850px;
+            border: 2px solid black;
+            border-radius: 50%;
+            box-shadow: 0 0 30px greenyellow,0 0 75px greenyellow,0 0 120px greenyellow;
+        }
+        .img1:hover
+        {
+           
+            box-shadow: 0 0 25px cyan,0 0 70px cyan;
+        }
+        .img2
+        {
+            background-image:url(6.jpg) ;
+            height: 300px;
+            width: 532px;
+            background-repeat: no-repeat;
+            margin-top: 130px;
+            margin-left: 73px;
+            border: 2px solid black;
+            border-radius: 25%;
+            box-shadow: 0 0 40px rgb(12, 248, 12), 0 0 80px rgb(12, 233, 12);
+        }
+        .img2:hover
+        {
+            box-shadow: 0 0 25px cyan,0 0 70px cyan;
+        }
+        .sec h2
+        {
+            margin-left: 850px;
+            margin-top: -311px;
+            font-size: 30px;
+            font-weight: 800;
+            color: black;
+        }
+        .sec p
+        {
+            margin-left: 736px;
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgb(0, 0, 41);
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">INTRO</a>
+
+        <nav class="navbar">
+            <a href="Personal_information.html" style="--i:7">Home</a>
+            <a href="about.html" style="--i:8">About</a>
+            <a href="skill.html" style="--i:9">Skill</a>
+            <a href="contact.html" style="--i:11">Contact</a>
+        </nav>
+    </header>
+    <section class="first">
+    <div class="info">
+        <h1>ABOUT</h1>
+        <p>My name is Prajwal Pawar,I am 21 years old.I completed my bcs<br>from pune universite and I completed my full stack web development<br>course form spark IT training institute deccan,pune.I studied in<br>full stack web development course Html,CSS,Javascript,Bootstrap,<br>Jquery,angular,MongoDB,Node.js,C,C++,etc technologies.</p>
+        
+        <div class="img1"></div>
+    </div>
+</section>
+<section class="second">
+    <div class="sec">
+        <div class="img2"></div>
+        <h2>Frontend Developer</h2>
+        <p>Front-end developers create user interfaces (UI). UI is the graphical<br> layout of an application that determines what each part<br> of a site or application.If someone wanted to build a website,<br> they might hire a front-end developer to create the site's layout.<br> The front-end developer determines where to place images,<br>what the navigation should look like, and how to present the site.<br>Much of their work involves ensuring the appearance and layout of<br>the site or application is easy to navigate and intuitive for the user. </p>
+        
+    </div>
+</section>
+    
+</body>
+</html>

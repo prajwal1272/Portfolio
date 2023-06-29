@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *
+        {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'poppins','sans-serif';
+        }
+        body{
+              color: rgb(9, 145, 199);
+            }
+        .header
+        {
+               position: fixed;
+               top: 0;
+               left: 0;
+               width: 100%;
+               padding: 20px 10%;
+               background-color:rgb(15, 2, 44);
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               z-index: 100;
+        }
+        .logo
+        {
+               position: relative;
+               font-size: 30px;
+               color: #26eb0c;
+               text-decoration: none;
+               font-weight: 600;
+               cursor: default;
+        }
+        .navbar a
+        { 
+               display: inline-block;
+               font-size: 20px;
+               color:cornsilk;
+               text-decoration: none;
+               font-weight: 800;
+               margin-right: 50px;
+              
+             
+        }
+        .navbar a:hover
+        {
+               color: #0ef;
+        }
+        .skills h1{
+            margin-top: 100px;
+            margin-left: 73px;
+            color: black;
+            font-size: 30px;
+            font-weight: 800;
+        }
+        .skills p
+        {
+            margin-top: 120px;
+            margin-left: 73px;
+            color: rgb(2, 2, 44);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 50px;
+        }
+        .img
+        {
+            background-image: url(7.jpg);
+            height: 250px;
+            width: 550px;
+            background-repeat: no-repeat;
+            margin-left: 770px;
+            margin-top: -349px;
+            border: 2px solid black;
+            border-radius: 25%;
+            box-shadow: 0 0 30px rgb(6, 250, 6),0 0 90px rgb(7, 250, 7),0 0 120px rgb(7, 250, 7);
+        }
+        .img:hover
+        {
+            box-shadow: 0 0 30px rgb(8, 1, 49),0 0 90px rgb(8, 1, 49),0 0 120px rgb(8, 1, 49);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">INTRO</a>
+
+        <nav class="navbar">
+            <a href="Personal_information.html" style="--i:7">Home</a>
+            <a href="about.html" style="--i:8">About</a>
+            <a href="skill.html" style="--i:9">Skill</a>
+            <a href="contact.html" style="--i:11">Contact</a>
+        </nav>
+    </header>
+    <div class="skills">
+        <h1>SKILL</h1>
+        
+        <p>- Have a degree in Computer Science or similar field<br>
+            - Be proficient in coding languages such as HTML, CSS, JavaScript, and jQuery<br>
+            - Understand server-side CSS.<br>
+            - Be experienced with graphic design applications (e.g., Adobe Illustrator)<br>
+            - Understand the principles of SEO<br>
+            - Have excellent skills in problem-solving,<br>
+            - Be proficient in communicating with team members, bosses, and clients<br>
+            - Have good interpersonal skills</p>
+            <div class="img"></div>
+    </div>
+</body>
+</html>

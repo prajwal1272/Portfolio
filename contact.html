@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins','sans-serif';
+        }
+        body{
+    color: rgb(9, 145, 199);
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color:rgb(15, 2, 44);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    position: relative;
+    font-size: 30px;
+    color: #26eb0c;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    
+    
+}
+.navbar a
+{ 
+    display: inline-block;
+    font-size: 20px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+   
+
+}
+.navbar a:hover
+{
+    color: #0ef;
+}
+        .contact
+        {
+            min-height: 100vh;
+            min-width: 100vh;
+            background: #08071d;
+            background: url(4.webp) no-repeat center center/cover;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+        .contact form
+        {
+            width: 670px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            margin-right: 20px;
+            box-shadow: 20px 20px 50px rgba(28, 159, 235, 0.5);
+            border-radius: 15px;
+            background: transparent;
+            backdrop-filter: blur(15px);
+            flex-wrap: wrap;
+        }
+        .contact form h1
+        {
+            color: #fff;
+            font-weight: bold;
+            margin-top: 20px;
+            width: 500px;
+            text-align:center;
+        }
+        .contact form input
+        {
+            margin-top: 10px;
+            border: 2px solid black;
+            border-radius: 30px;
+            height: 50px;
+            background:transparent;
+            color: rgb(31, 245, 12);
+            font-size: 20px;
+            width: 290px;
+            padding-left: 10px;
+            font-weight: 600;
+            margin: 0 10px;
+        }
+        .contact form input::placeholder
+        {
+            color: #050505;
+        }
+        .contact form button
+        {
+            margin-top: 50px ;
+            height: 40px;
+            width: 100px;
+            margin-right: 8px;
+            color: #d61932;
+            font-size: 20px;
+            font-weight: 800;
+            background:transparent;
+            border-radius: 15px;
+            border: 2px solid black;
+        } 
+        .contact form button a{
+            text-decoration: none;
+            color: #d61932;
+        }
+        .icon a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid cyan;
+            color: #26eb0c;
+            border-radius: 25%;
+            font-size: 25px;
+            margin-right: 20px;
+            text-decoration: none;
+            padding: 10px;
+            margin-top: 20px;
+           
+        }
+        .icon a:hover
+        {
+            background: rgb(5, 238, 44);
+            color: black;
+            box-shadow: 0 0 20px rgb(2, 156, 228);
+        }
+        .icon h1{
+            margin-right: 100px;
+            font-size: 40px;
+            color: rgb(206, 252, 4);
+        }
+        .icon p
+        {
+            font-size: 20px;
+            margin-right: 120px;
+            color: rgb(217, 255, 2);margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">INTRO</a>
+
+        <nav class="navbar">
+            <a href="Personal_information.html" style="--i:7">Home</a>
+            <a href="about.html" style="--i:8">About</a>
+            <a href="skill.html" style="--i:9">Skill</a>
+            <a href="contact.html" style="--i:11">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="contact">
+        <div class="icon">
+            <h1 style="margin-right: 100px;">CONTACT</h1>
+            <p>you need to create your website or application<br>then contact us or Register here for further quries....
+            </p>
+            <a href="https://www.facebook.com/" onclick="alert('Would like to Continue this Page!!');"><i class='bx bxl-facebook'></i></a>
+            <a href="https://instagram.com/prajwalpawar.6?igshid=MzRlODBiNWFlZA%3D%3D" onclick="alert('Would like to Continue this Page!!');"><i class='bx bxl-instagram'></i></a>
+            <a href="https://web.whatsapp.com/" onclick="alert('Would like to Continue this Page!!');"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://twitter.com/i/flow/login" onclick="alert('Would like to Continue this Page!!');"><i class='bx bxl-twitter'></i></a>
+            <a href="https://mail.google.com/mail" onclick="alert('Would like to Continue this Page!!');"><i class='bx bxl-gmail'></i></a>
+    </div>
+       
+        <form action="regiaction.html">
+        <h1>REGISTRATION</h1>
+        <input type="text" id="First_Name" placeholder="First Name" onkeyup="myFunction()">
+        <input type="text" id="Last_Name" placeholder="Last Name">
+        <input type="Email" id="email" placeholder="E-mail">
+        <input type="number" id="mobile" placeholder="Contact No.">
+        <button type="submit">SIGN UP</button>
+       
+    </form>
+   </div>
+   <script>
+    function myFunction(){
+    var x=document.getElementById("First_Name");
+    x.value=x.value.toUpperCase();
+    }
+   
+   </script>
+</body>
+</html>
